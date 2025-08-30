@@ -1,21 +1,10 @@
 # Profile-cv
 
-Este repositorio contiene el **portafolio y CV digital** de Ricardo Terrazas Ramos, un estudiante de Ingeniería de Sistemas apasionado por el desarrollo web, Fullstack y análisis de datos.  
+Este repositorio contiene el **portafolio y CV digital**
 
 ## 🚀 Descripción
 
-El proyecto está desarrollado con **React** y **Tailwind CSS**, incluyendo animaciones con **Framer Motion** y diversos componentes que muestran:
-
-- Información personal y contacto
-- Proyectos académicos y personales
-- Experiencia profesional
-- Educación
-- Habilidades técnicas y herramientas
-- Otros programas y certificaciones
-
-Este portafolio permite presentar de manera interactiva y profesional el perfil de Ricardo, ideal para reclutadores y conexiones profesionales.
-
----
+El proyecto está desarrollado con **React** y **Tailwind CSS**, incluyendo animaciones con **Framer Motion** y diversos componentes que muestran en el git
 
 ## 🛠 Tecnologías usadas
 
@@ -24,7 +13,6 @@ Este portafolio permite presentar de manera interactiva y profesional el perfil 
 - **Herramientas de desarrollo:** Visual Studio Code, Git, GitHub
 - **Lenguajes:** JavaScript, TypeScript
 
----
+## 🔗 Contacto
 
-## 📂 Estructura del proyecto
-
+- LinkedIn: [Perfil LinkedIn](www.linkedin.com/in/ricardo-terrazas-ramos) 
