@@ -147,7 +147,7 @@ export function About() {
   return (
     <Section id="about" title="Sobre mí" icon={<User size={22} />}>
       <p className="text-gray-700 leading-relaxed">
-        Estudiante del 10° ciclo de Ingeniería de Sistemas e Informática en la
+        Estudiante del 10° ciclo de la carrera de Ingeniería de Sistemas e Informática en la
         Universidad Tecnológica del Perú. Me apasiona el desarrollo web 🌐, la
         analítica de datos 📊 y la creación de soluciones digitales que generen
         impacto. Siempre busco aprender rápido y aplicar metodologías ágiles 🚀.
