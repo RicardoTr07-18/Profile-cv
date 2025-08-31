@@ -15,4 +15,4 @@ El proyecto está desarrollado con **React** y **Tailwind CSS**, incluyendo anim
 
 ## 🔗 Contacto
 
-- LinkedIn: [Perfil LinkedIn](www.linkedin.com/in/ricardo-terrazas-ramos) 
+- LinkedIn: [ricardo-terrazas-ramos](https://pe.linkedin.com)  
