@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 //-----importar (primero)-----
 import { Skills } from "./Skills";
@@ -23,6 +25,8 @@ export function Navbar() {
     { id: "extras", label: "Otros Programas" },
   ];
 
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <motion.nav
       initial={{ y: -60 }}
@@ -32,7 +36,9 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-extrabold tracking-wide">🚀 Ricardo.dev</h1>
-        <ul className="flex gap-6 text-sm font-medium">
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-6 text-sm font-medium">
           {sections.map((sec) => (
             <li key={sec.id}>
               <a
@@ -44,7 +50,37 @@ export function Navbar() {
             </li>
           ))}
         </ul>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <motion.ul
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="md:hidden bg-indigo-900/90 backdrop-blur-md flex flex-col gap-4 px-6 py-4 text-sm font-medium"
+        >
+          {sections.map((sec) => (
+            <li key={sec.id}>
+              <a
+                href={`#${sec.id}`}
+                className="hover:text-yellow-300 transition-colors duration-200 block"
+                onClick={() => setIsOpen(false)}
+              >
+                {sec.label}
+              </a>
+            </li>
+          ))}
+        </motion.ul>
+      )}
     </motion.nav>
   );
 }
