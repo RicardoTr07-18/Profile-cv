@@ -28,6 +28,8 @@ import {
     DiMsqlServer 
 } from "react-icons/di";
 
+import { SiPhp } from "react-icons/si";
+
 export function Skills() {
   return (
     <section id="skills" className="py-16 px-6 bg-gray-50">
@@ -51,6 +53,11 @@ export function Skills() {
                 <strong className="block mb-2">Lenguajes de programación:</strong>
                 <div className="flex flex-wrap gap-4 text-2xl">
                   <div className="flex items-center gap-2"><FaJava className="text-red-600" /><span className="spanText">Java</span></div>
+
+<div className="flex items-center gap-2">
+  <SiPhp className="text-indigo-500" />
+  <span className="spanText">PHP</span>
+</div>
                   <div className="flex items-center gap-2"><FaPython className="text-blue-500" /><span className="spanText">Python</span></div>
                   <div className="flex items-center gap-2"><FaJs className="text-yellow-400" /><span className="spanText">JavaScript</span></div>
                   <div className="flex items-center gap-2"><SiTypescript className="text-blue-600" /><span className="spanText">TypeScript</span></div>
